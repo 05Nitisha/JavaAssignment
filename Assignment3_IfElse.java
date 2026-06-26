@@ -3,11 +3,8 @@ package week1;
 public class Assignment3_IfElse {
 	public static void main(String[] args) {
 	
-	int num=100;
-	int num1=76;
-	int num3=68;
-	//int num4=48;
-	int num4=20;
+	int num=76;
+	
 	
 	if (num>=90 && num<=100)
 	{	
@@ -17,7 +14,7 @@ public class Assignment3_IfElse {
 	{
 	System.out.println("B");
 	}
-  if (num3 >=60 && num3<=74)
+         if (num3 >=60 && num3<=74)
 		{
 		System.out.println("C");
 		}
