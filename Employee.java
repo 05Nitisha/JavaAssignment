@@ -1,43 +1,64 @@
-package Week3;
+package Week4;
 
 public class Employee {
-
-	int id;
+	
+	int empId;
 	String name;
-	double basicSalary=4000.0;
-	double totalSalary;
+	float salary;
+	static String companyName="ABC Technologies";
 	
-	
-	Employee(int id,String name,double basicSalary){
-		
-	
-	this.id=id;
-	this.name=name;
-	this.basicSalary=basicSalary;
-	
-	}
-	public double calculatedSalary()
-	{
-		double  HRA =this.basicSalary*0.2;
-		double Bonus=this.basicSalary*0.1;
-		return this.basicSalary+HRA+Bonus;
-		
-	}
-	public void display()
+	public Employee(int empId,String name,float salary) 
 	
 	{
-		double totalSalary=calculatedSalary();
-		
-		System.out.println(id);
-		System.out.println(name);
-		System.out.println(basicSalary);
-		System.out.println(totalSalary);
-		
+		this.empId=empId;
+		this.name=name;
+		this.salary=salary;
 	}
 	
-	public static void main(String[] args)
+	public void displayEmployee()
 	{
-		Employee obj=new Employee(121,"Rajat",4000.0);
-				obj.display();
+		System.out.println();
+		
+		System.out.println("Employee Details");
+		
+		System.out.println();
+		
+		System.out.println();
+		
+		System.out.println("Employee ID :" +empId);
+		
+		System.out.println();
+		
+		System.out.println("Name :" +name);
+		
+		System.out.println();
+		
+		System.out.println("Salary :" +salary);
 	}
+	
+	public static void displayCompany()
+	{
+		System.out.println("Company Name :" +companyName);
+		System.out.println();
+	}
+	
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		Employee emp1=new Employee(101,"Priya",50000.0f);
+		
+		Employee emp2=new Employee(102,"Rahul",62000.0f);
+		
+		Employee emp3=new Employee(102,"Anjali",58000.0f);
+		
+		Employee.displayCompany();
+		
+		emp1.displayEmployee();
+		
+		emp2.displayEmployee();
+		
+		emp3.displayEmployee();
+
+	}
+
 }
