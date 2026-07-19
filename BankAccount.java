@@ -4,7 +4,7 @@ public class BankAccount {
 	
 	final String Account_Type="Savings";
 	
-	int accountNumber;
+	long accountNumber;
 	
 	String accountHolderName;
 	
@@ -28,7 +28,7 @@ public class BankAccount {
 		
 		System.out.println("Account Details");
 		
-		System.out.println();
+		System.out.println(-----------------);
 		
 		System.out.println("Account Number :" +accountNumber);
 		
