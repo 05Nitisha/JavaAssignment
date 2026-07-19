@@ -17,7 +17,7 @@ public class Car extends Vehicle  {
 			
 			System.out.println("Car Information: ");
 			
-			System.out.println();
+			System.out.println(-------------------);
 			
 			System.out.println("model: " +model);
 			
